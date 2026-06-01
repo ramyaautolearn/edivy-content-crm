@@ -16,7 +16,7 @@ export default function AgentAgenda({
   userRole,
 }: {
   userEmail: string;
-  userRole: string;
+  _userRole: string;
 }) {
   const [tasks, setTasks] = useState<any[]>([]);
   const [categories, setCategories] = useState<any[]>([]);
