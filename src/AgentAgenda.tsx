@@ -16,7 +16,7 @@ export default function AgentAgenda({
   userRole,
 }: {
   userEmail: string;
-  _userRole: string;
+  userRole: string;
 }) {
   const [tasks, setTasks] = useState<any[]>([]);
   const [categories, setCategories] = useState<any[]>([]);
@@ -171,7 +171,7 @@ export default function AgentAgenda({
             My Personal Agenda
           </h1>
           <p className="text-gray-500">
-            Plan your individual workflow and custom tasks privately.
+            Plan your workflow privately. <span className="font-bold text-indigo-600 ml-2">[{userRole}]</span>
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
